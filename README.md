@@ -36,11 +36,11 @@ Salijona Dyrmishi; Amnir Hadachi.
 If you use our source code or synthetic dataset in an academic work, please cite:
 ```
 @inproceedings{Shan2020NetCalib,
-  title={Mobile Positioning and Trajectory Reconstruction Based on Mobile Phone Network Data:
-         A Tentative Using Particle Filter},
+  title={Mobile Positioning and Trajectory Reconstruction Based on Mobile Phone Network Data: A Tentative 
+          Using Particle Filter},
   author={Salijona, Dyrmishi; Hadachi, Amnir},
-  booktitle={Proceedings of the 7th International IEEE Conference on Models 
-              and Technologies for Intelligent Transportation Systems},
+  booktitle={Proceedings of the 7th International IEEE Conference on Models and Technologies for Intelligent
+              Transportation Systems},
   year={2021},
   organization={IEEE}
 }
