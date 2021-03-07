@@ -2,26 +2,35 @@
 
 This work is accepted for publication in MT-ITS 2021.
 
-<img src="">
+<img src="https://github.com/salijona/pfLoc/blob/main/pf_flow.png">
 
-In this paper, we demonstrated .....
+In this paper, we demonstrated a method based on Particle Filter for user localization and trajectory reconstruction using CDR data. The method was evaluated both in synthentic and real case data provided by a mobile operator in Estonia. 
 
 ## Motivation
-We are releasing our approach's source code for mobile positioning and trajectory reconstruction to share with the scientific community with intention in contributing in pushing the boundaries in the field of ICT and intelligent transportation systems for introducing new source of dataset to provide information about traffic status and travel information based on mobile phone network data such as CDR or VLR data. 
+We are releasing our approach's source code for mobile positioning and trajectory reconstruction  with intention in contributing to advancement of state of the art in localization and trajectory reconstruction using mobile data. We hope it will serve  as well as an initiative in introducing new source of datasets to provide information about traffic status and travel information based on mobile phone network data such as CDR or VLR. 
 
-## Experiment results
-### 1. 
+## Usage 
 
+### Environment 
+Use the commands below to create a python environment named pf from environment.yml file in master branch using Anaconda. 
+$ git checkout master
+$ conda env create -f environment. yml
+$ conda activate pf
 
-### 2. 
+### Dataset
+We are providing the syntentic dataset that we generated using two samples (id = 162 and id = 197) from T-drive   dataset  that  contains  a  one-week  GPS  trajectory of  taxis  in  the  city  of  Beijing. The dataset was generated using a fixed cell size of 1800 m. The CDR events  are generated with the  assumption  that  when  a  GPS  event  is  triggered,  at  the same  time  a  CDR  event  is  triggered  automatically.  You will find in the master branch the Beijing_data folder with .csv files for CDR events and gps events for evaluation. 
 
+### Experiments
+Run the experiments by code access point in the file Particle_Filter_Hybrid.py located in src folder:
+$ python3 Particle_Filter_Hybrid.py
+or for Windows:
+$ python Particle_Filter_Hybrid.py
 
-### 3. Visualization
+### Visualization
+The paths can be visualized using draw function in utils file or through a geographic information system application that supports viewing, editing, and analysis of geospatial data like QGIS. However due to draw function performing only basic markers we would advise on using tools like QGIS. To visualize the locations using QGIS you need to save the predicted locations in every iteration of the algorithm in a .csv file. 
+Below is an example of localization and trajectory reconstruction using QGIS compared to actual GPS points. 
 
-## Deployment
-
-
-## Test the particle filter
+<img src="https://github.com/salijona/pfLoc/blob/main/predicted_path_pf.PNG">
 
 ## Licence 
 This source code is released under a [GPLv3.0](https://github.com/simonwu53/NetCalib-Lidar-Camera-Auto-calibration/blob/master/LICENSE) license. 
@@ -46,6 +55,6 @@ If you use our source code or synthetic dataset in an academic work, please cite
 }
 ```
 
-Preprint version of the paper is [here]().
+Preprint version of the paper can be found [here]().
 
 
