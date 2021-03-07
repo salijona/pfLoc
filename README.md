@@ -16,7 +16,7 @@ We are releasing our approach's source code for mobile positioning and trajector
 Use the commands below to create a python environment named pf from environment.yml file in master branch using Anaconda. 
 ```
 $ git checkout master
-$ conda env create -f environment. yml
+$ conda env create -f environment.yml
 $ conda activate pf
 ```
 ### Dataset
