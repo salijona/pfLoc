@@ -2,7 +2,8 @@
 
 This work is accepted for publication in MT-ITS 2021.
 
-<center><img src="https://github.com/salijona/pfLoc/blob/main/pf_flow.png" class="center"></center>
+<p align="center">
+<img src="https://github.com/salijona/pfLoc/blob/main/pf_flow.png" class="center"></p>
 
 In this paper, we demonstrated a method based on Particle Filter for user localization and trajectory reconstruction using CDR data. The method was evaluated both in synthentic and real case data provided by a mobile operator in Estonia. 
 
@@ -34,7 +35,8 @@ $ python Particle_Filter_Hybrid.py
 The paths can be visualized using draw function in utils file or through a geographic information system application that supports viewing, editing, and analysis of geospatial data like QGIS. However due to draw function performing only basic markers we would advise on using tools like QGIS. To visualize the locations using QGIS you need to save the predicted locations in every iteration of the algorithm in a .csv file. 
 Below is an example of localization and trajectory reconstruction using QGIS compared to actual GPS points. 
 
-<center><img src="https://github.com/salijona/pfLoc/blob/main/predicted_path_pf.PNG" width="700" height="300" class="center"></center>
+<p align="center">
+<img src="https://github.com/salijona/pfLoc/blob/main/predicted_path_pf.PNG" width="600" height="300" class="center"></p>
 
 ## Licence 
 This source code is released under a [GPLv3.0](https://github.com/simonwu53/NetCalib-Lidar-Camera-Auto-calibration/blob/master/LICENSE) license. 
