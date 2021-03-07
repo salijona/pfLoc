@@ -13,24 +13,28 @@ We are releasing our approach's source code for mobile positioning and trajector
 
 ### Environment 
 Use the commands below to create a python environment named pf from environment.yml file in master branch using Anaconda. 
+```
 $ git checkout master
 $ conda env create -f environment. yml
 $ conda activate pf
-
+```
 ### Dataset
 We are providing the syntentic dataset that we generated using two samples (id = 162 and id = 197) from T-drive   dataset  that  contains  a  one-week  GPS  trajectory of  taxis  in  the  city  of  Beijing. The dataset was generated using a fixed cell size of 1800 m. The CDR events  are generated with the  assumption  that  when  a  GPS  event  is  triggered,  at  the same  time  a  CDR  event  is  triggered  automatically.  You will find in the master branch the Beijing_data folder with .csv files for CDR events and gps events for evaluation. 
 
 ### Experiments
 Run the experiments by code access point in the file Particle_Filter_Hybrid.py located in src folder:
+```
 $ python3 Particle_Filter_Hybrid.py
+```
 or for Windows:
+```
 $ python Particle_Filter_Hybrid.py
-
+```
 ### Visualization
 The paths can be visualized using draw function in utils file or through a geographic information system application that supports viewing, editing, and analysis of geospatial data like QGIS. However due to draw function performing only basic markers we would advise on using tools like QGIS. To visualize the locations using QGIS you need to save the predicted locations in every iteration of the algorithm in a .csv file. 
 Below is an example of localization and trajectory reconstruction using QGIS compared to actual GPS points. 
 
-<img src="https://github.com/salijona/pfLoc/blob/main/predicted_path_pf.PNG">
+<img src="https://github.com/salijona/pfLoc/blob/main/predicted_path_pf.PNG" onload="this.width/=2;this.onload=null;">
 
 ## Licence 
 This source code is released under a [GPLv3.0](https://github.com/simonwu53/NetCalib-Lidar-Camera-Auto-calibration/blob/master/LICENSE) license. 
