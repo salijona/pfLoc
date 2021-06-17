@@ -61,6 +61,6 @@ If you use our source code or synthetic dataset in an academic work, please cite
 }
 ```
 
-Preprint version of the paper can be found [here]().
+Preprint version of the paper can be found [here](https://www.researchgate.net/publication/352226463_Mobile_Positioning_and_Trajectory_Reconstruction_Based_on_Mobile_Phone_Network_Data_A_Tentative_Using_Particle_Filter).
 
 
