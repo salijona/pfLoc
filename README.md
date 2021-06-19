@@ -8,7 +8,7 @@ This work is accepted for publication in MT-ITS 2021.
 In this paper, we demonstrated a method based on Particle Filter for user localization and trajectory reconstruction using CDR data. The method was evaluated both in synthentic and real case data. 
 
 ## Motivation
-We are releasing our approach's source code for mobile positioning and trajectory reconstruction  with intention in contributing to advancement of state of the art in localization and trajectory reconstruction using mobile data. We hope it will serve  as well as an initiative in introducing new source of datasets to provide information about traffic status and travel information based on mobile phone network data such as CDR or VLR. 
+We are releasing our approach's source code for mobile positioning and trajectory reconstruction  with intention in contributing to advancement of state of the art in localization and trajectory reconstruction using mobile network data. We hope it will serve  as well as an initiative in introducing new source of datasets to provide information about traffic status and travel information based on mobile phone network data such as CDR or VLR. 
 
 ## Usage 
 
@@ -48,7 +48,7 @@ For a closed-source version for commercial purposes, please contact the authors:
 Salijona Dyrmishi; Amnir Hadachi.  
 
 ## Citation 
-If you use our source code or synthetic dataset in an academic work, please cite:
+If you use our source code or synthetic CDR dataset in an academic work, please cite:
 ```
 @inproceedings{Dyrmishi2021Mob,
   title={Mobile Positioning and Trajectory Reconstruction Based on Mobile Phone Network Data: A Tentative 
